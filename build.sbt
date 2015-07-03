@@ -5,6 +5,12 @@ version := "1.0.0-SNAPSHOT"
 
 scalaVersion := "2.11.6"
 
+fork in run := true
+
+javaOptions ++= Seq(
+  "-Dlog.service.output=/dev/stderr",
+  "-Dlog.access.output=/dev/stderr")
+
 resolvers ++= Seq(
   Resolver.sonatypeRepo("releases"),
   "Twitter Maven" at "http://maven.twttr.com",
@@ -29,5 +35,3 @@ libraryDependencies ++= Seq(
   "org.mockito" % "mockito-core" % "1.9.5" % "test",
   "org.scalatest" %% "scalatest" % "2.2.3" % "test",
   "org.specs2" %% "specs2" % "2.3.12" % "test")
-
-fork in run := true
