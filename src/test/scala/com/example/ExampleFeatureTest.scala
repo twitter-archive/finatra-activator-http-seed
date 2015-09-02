@@ -1,6 +1,6 @@
 package com.example
 
-import com.twitter.finagle.http.Status._
+import com.twitter.finagle.httpx.Status.Ok
 import com.twitter.finatra.http.test.EmbeddedHttpServer
 import com.twitter.inject.server.FeatureTest
 
