@@ -16,9 +16,8 @@
             <h2>Configuring your application</h2>
             <p>The <a href="#code/build.sbt" class="shortcut">build.sbt</a> contains the sbt build configuration; you'll want to edit
               at least the project name and version.</p>
-            <p>By default Finatra will run your external service on port :8888 -- this also happens to be the same port the Activator
-              UI uses. Therefore, in order to be able to correctly run your project inside the Activator UI, start the Activator on a different port. E.g.,
-              <pre>activator -Dhttp.port=9090 ui</pre>
+            <p>This example by default will run your external service on port :9999 -- you can override this by either changing the code in the
+              ExampleServer class or by passing a different value in the -http.port flag.
             </p>
         </div>
         <div>
