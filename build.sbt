@@ -13,13 +13,13 @@ javaOptions ++= Seq(
 
 resolvers ++= Seq(
   Resolver.sonatypeRepo("releases"),
-  "Twitter Maven" at "http://maven.twttr.com",
+  "Twitter Maven" at "https://maven.twttr.com",
   "Finatra Repo" at "http://twitter.github.com/finatra"
 )
 
 lazy val versions = new {
   val finagle = "6.28.0"
-  val finatra = "2.0.0.RC1"
+  val finatra = "2.0.0"
   val logback = "1.0.13"
   val mockito = "1.9.5"
   val scalatest = "2.2.3"
