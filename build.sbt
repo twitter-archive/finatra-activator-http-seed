@@ -16,7 +16,7 @@ resolvers ++= Seq(
   "Twitter Maven" at "https://maven.twttr.com")
 
 lazy val versions = new {
-  val finatra = "2.1.1"
+  val finatra = "2.1.3"
   val guice = "4.0"
   val logback = "1.0.13"
   val mockito = "1.9.5"
@@ -28,7 +28,7 @@ libraryDependencies ++= Seq(
   "com.twitter.finatra" %% "finatra-http" % versions.finatra,
   "com.twitter.finatra" %% "finatra-slf4j" % versions.finatra,
   "ch.qos.logback" % "logback-classic" % versions.logback,
-  "ch.qos.logback" % "logback-classic" % versions.logback % "test",  
+  "ch.qos.logback" % "logback-classic" % versions.logback % "test",
 
   "com.twitter.finatra" %% "finatra-http" % versions.finatra % "test",
   "com.twitter.inject" %% "inject-server" % versions.finatra % "test",
