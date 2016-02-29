@@ -18,10 +18,10 @@ resolvers ++= Seq(
 lazy val versions = new {
   val finatra = "2.1.4"
   val guice = "4.0"
-  val logback = "1.1.5"
-  val mockito = "1.10.19"
-  val scalatest = "2.2.6"
-  val specs2 = "2.3.13"
+  val logback = "1.0.13"
+  val mockito = "1.9.5"
+  val scalatest = "2.2.3"
+  val specs2 = "2.3.12"
 }
 
 libraryDependencies ++= Seq(
