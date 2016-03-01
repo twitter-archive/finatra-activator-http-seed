@@ -1,4 +1,4 @@
-# Finatra v2.x Typesafe [Activator](https://www.typesafe.com/get-started) HTTP Server Seed Template
+# Finatra Typesafe [Activator](https://www.typesafe.com/get-started) HTTP Server Seed Template
 
 [![Build Status](https://secure.travis-ci.org/twitter/finatra-activator-seed.png?branch=master)](http://travis-ci.org/twitter/finatra-activator-seed?branch=master)
 
