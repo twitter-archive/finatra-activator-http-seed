@@ -1,4 +1,4 @@
-name := "activator-seed"
+name := "activator-http-seed"
 organization := "com.example"
 
 version := "1.0.0-SNAPSHOT"
@@ -26,7 +26,6 @@ lazy val versions = new {
 
 libraryDependencies ++= Seq(
   "com.twitter.finatra" %% "finatra-http" % versions.finatra,
-  "com.twitter.finatra" %% "finatra-slf4j" % versions.finatra,
   "ch.qos.logback" % "logback-classic" % versions.logback,
   "ch.qos.logback" % "logback-classic" % versions.logback % "test",
 
