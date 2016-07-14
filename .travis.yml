@@ -1,11 +1,9 @@
 language: scala
 
 scala:
-  - 2.11.7
+  - 2.11.8
 
 jdk:
-  - openjdk7
-  - oraclejdk7
   - oraclejdk8
 
 script: travis_retry sbt ++$TRAVIS_SCALA_VERSION clean test
