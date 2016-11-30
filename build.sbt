@@ -16,11 +16,12 @@ resolvers ++= Seq(
   "Twitter Maven" at "https://maven.twttr.com")
 
 lazy val versions = new {
-  val finatra = "2.5.0"
+  val finatra = "2.6.0"
   val guice = "4.0"
   val logback = "1.1.7"
   val mockito = "1.9.5"
-  val scalatest = "2.2.6"
+  val scalatest = "2.3.0"
+  val scalacheck = "1.13.4"
   val specs2 = "2.3.12"
 }
 
@@ -43,5 +44,6 @@ libraryDependencies ++= Seq(
   "com.twitter" %% "inject-modules" % versions.finatra % "test" classifier "tests",
 
   "org.mockito" % "mockito-core" % versions.mockito % "test",
+  "org.scalacheck" %% "scalacheck" % versions.scalacheck % "test",
   "org.scalatest" %% "scalatest" % versions.scalatest % "test",
   "org.specs2" %% "specs2" % versions.specs2 % "test")
