@@ -20,7 +20,7 @@ lazy val versions = new {
   val guice = "4.0"
   val logback = "1.1.7"
   val mockito = "1.9.5"
-  val scalatest = "2.3.0"
+  val scalatest = "3.0.0"
   val scalacheck = "1.13.4"
   val specs2 = "2.3.12"
 }
