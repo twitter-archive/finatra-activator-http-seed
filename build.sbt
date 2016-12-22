@@ -16,9 +16,9 @@ resolvers ++= Seq(
   "Twitter Maven" at "https://maven.twttr.com")
 
 lazy val versions = new {
-  val finatra = "2.6.0"
+  val finatra = "2.7.0"
   val guice = "4.0"
-  val logback = "1.1.7"
+  val logback = "1.1.8"
   val mockito = "1.9.5"
   val scalatest = "3.0.0"
   val scalacheck = "1.13.4"
