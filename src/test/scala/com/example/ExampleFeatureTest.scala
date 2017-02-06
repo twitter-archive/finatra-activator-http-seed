@@ -8,12 +8,10 @@ class ExampleFeatureTest extends FeatureTest {
 
   override val server = new EmbeddedHttpServer(new ExampleServer)
 
-  "Server" should {
-    "ping" in {
-      server.httpGet(
-        path = "/ping",
-        andExpect = Ok,
-        withBody = "pong")
-    }
+  test("server#ping") {
+    server.httpGet(
+      path = "/ping",
+      andExpect = Ok,
+      withBody = "pong")
   }
 }

@@ -10,7 +10,7 @@ class ExampleStartupTest extends Test {
     stage = Stage.PRODUCTION,
     twitterServer = new ExampleServer)
 
-  "server" in {
+  test("server#startup") {
     server.assertHealthy()
   }
 }
