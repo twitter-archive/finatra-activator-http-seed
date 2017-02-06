@@ -22,7 +22,7 @@ lazy val versions = new {
   val mockito = "1.9.5"
   val scalatest = "3.0.0"
   val scalacheck = "1.13.4"
-  val specs2 = "2.4.17"
+  val specs2 = "2.3.12"
 }
 
 libraryDependencies ++= Seq(
