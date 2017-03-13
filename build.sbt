@@ -11,18 +11,17 @@ javaOptions ++= Seq(
   "-Dlog.service.output=/dev/stderr",
   "-Dlog.access.output=/dev/stderr")
 
-resolvers ++= Seq(
-  Resolver.sonatypeRepo("releases"),
-  "Twitter Maven" at "https://maven.twttr.com")
+resolvers += Resolver.sonatypeRepo("releases")
 
 lazy val versions = new {
-  val finatra = "2.8.0"
+  val finatra = "2.9.0"
   val guice = "4.0"
   val logback = "1.1.7"
   val mockito = "1.9.5"
   val scalatest = "3.0.0"
   val scalacheck = "1.13.4"
   val specs2 = "2.4.17"
+  val junit = "4.12"
 }
 
 libraryDependencies ++= Seq(
@@ -42,6 +41,8 @@ libraryDependencies ++= Seq(
   "com.twitter" %% "inject-app" % versions.finatra % "test" classifier "tests",
   "com.twitter" %% "inject-core" % versions.finatra % "test" classifier "tests",
   "com.twitter" %% "inject-modules" % versions.finatra % "test" classifier "tests",
+
+  "junit" % "junit" % versions.junit % "test",
 
   "org.mockito" % "mockito-core" % versions.mockito % "test",
   "org.scalacheck" %% "scalacheck" % versions.scalacheck % "test",
