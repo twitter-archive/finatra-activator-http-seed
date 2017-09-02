@@ -3,7 +3,8 @@ organization := "com.example"
 
 version := "1.0.0-SNAPSHOT"
 
-scalaVersion := "2.11.8"
+scalaVersion := "2.12.1"
+crossScalaVersions := Seq("2.11.11", "2.12.1")
 
 fork in run := true
 
